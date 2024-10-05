@@ -51,4 +51,23 @@ body {
     color:black;
 }
 
-  
+/* Adjusts content to be readable if the screen is too small (mobile)*/
+@media screen and (max-width: 800px){
+
+    /* Hides the navbar */
+    .navbar {
+        width: 0;
+    }
+
+    /* Centers the markdown and prevents the content from going offscreen */
+    .markdown-portion {
+        padding: 1% 7%; 
+        overflow-x:hidden;
+    }
+    
+    /* Prevents the code from going offscreen by adding a scroll bar to the code block */
+    /* The code text cannot break to the next line for an unknown reason */
+    .code-block {
+        overflow-x:scroll;
+    }
+}
