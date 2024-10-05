@@ -1,0 +1,54 @@
+body {
+    margin: 0;      /* Prevents the white border from appearing */
+    display: flex;  /* Flex no longer implemented */
+}
+
+.markdown-portion {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";   /* From Github's CSS */
+    background-color: #282828;  /* All colors from https://colorffy.com/dark-theme-generator?colors=dee7e7-121212*/
+    color: #e5ecec;
+    line-height: 1.5;             /* From Github's CSS */
+    font-size: 16px;
+    padding: 1% 3% 1% 21%;        /* Left padding prevents content from being hidden behind the navigation bar */
+}
+
+/* The blocks of example code */
+.code-block {
+    background-color: #3f3f3f;
+    color: #f0f4f4;
+    padding: 3px 15px
+}
+
+/* TODO: Remove the scroll bar from the table of contents */
+.navbar {
+    height: 100%;
+    width: 18%;
+    background-color: #121212;
+    overflow-y: auto;   /* Makes it so the user can scroll down on the navbar */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";   /*From Github's CSS*/
+    position: fixed;    /* Makes it so the navbar sticks to its original position, even during scrolling */
+    padding: 20px 0
+}
+
+.navbar a {
+    padding: 14px 8px 14px 32px;
+    text-decoration: none;
+    color: #dee7e7;
+    display: block;     /* Makes the table of content items veritcal */
+    font-size: 16px;
+}
+ 
+/* The text "Table of Contents" */
+.navbar h3 {
+    padding: 8px 8px 0px 32px;
+    color: white;
+    display: block;
+}
+
+/* The transition of colors when hovering over a table of content item */
+.navbar a:hover {
+    background-color: white;
+    color:black;
+}
+
+  
